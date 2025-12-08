@@ -1,0 +1,45 @@
+# Python 编译/缓存
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dll
+
+# 虚拟环境
+.venv/
+venv/
+env/
+*.env
+.conda/
+
+# Jupyter/实验输出
+.ipynb_checkpoints/
+*.ipynb_convert/
+*.log
+
+# 数据与模型
+dataset/
+insert_images/
+insert_masks/
+images/
+labels/
+runs/
+*.pt
+*.pth
+
+# Ultralytics/YOLO 相关临时
+*.onnx
+*.engine
+*.trt
+*.tflite
+*.csv  # 如果 results.csv 需要保留，请删除这一行
+
+# 编辑器/IDE
+.vscode/
+.idea/
+*.iml
+
+# 系统文件
+.DS_Store
+Thumbs.db

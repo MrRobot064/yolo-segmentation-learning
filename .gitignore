@@ -1,45 +1,44 @@
-# Python 编译/缓存
+# ---- Python 环境文件 ----
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-*.so
-*.dll
 
-# 虚拟环境
-.venv/
+# ---- 虚拟环境 ----
 venv/
-env/
-*.env
-.conda/
+.env/
+.venv/
+ENV/
 
-# Jupyter/实验输出
-.ipynb_checkpoints/
-*.ipynb_convert/
-*.log
-
-# 数据与模型
-dataset/
-insert_images/
-insert_masks/
-images/
-labels/
-runs/
-*.pt
-*.pth
-
-# Ultralytics/YOLO 相关临时
-*.onnx
-*.engine
-*.trt
-*.tflite
-*.csv  # 如果 results.csv 需要保留，请删除这一行
-
-# 编辑器/IDE
+# ---- IDE 文件 ----
 .vscode/
 .idea/
-*.iml
 
-# 系统文件
+# ---- 临时文件 ----
+*.log
+*.tmp
+
+# ---- Jupyter Notebook 缓存（如果不用 notebook 可忽略）----
+.ipynb_checkpoints/
+
+# ---- YOLO 训练输出 ----
+runs/
+
+# ---- 数据集（不上传大型数据）----
+datasets/
+
+# ---- 权重文件（通常都比较大）----
+*.pt
+*.onnx
+*.engine
+*.tflite
+*.h5
+
+# ---- 压缩包 ----
+*.zip
+*.tar
+*.tar.gz
+
+# ---- OS 系统文件 ----
 .DS_Store
 Thumbs.db

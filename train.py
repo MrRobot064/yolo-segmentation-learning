@@ -94,10 +94,6 @@ from ultralytics import YOLO
 
 ROOT = Path(".").resolve()
 
-# 假设前面已经有：
-# model = YOLO("yolo11n-seg.pt")
-# model.train(data="coco8-seg.yaml", ...)
-
 # 1. 训练结束后，从 model 拿 best 权重路径
 best_ckpt = model.ckpt_path  # Ultralytics 会在训练结束时写好这个属性
 print("使用权重:", best_ckpt)
